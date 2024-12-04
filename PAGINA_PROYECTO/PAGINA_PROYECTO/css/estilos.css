@@ -1,0 +1,631 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+html{
+	height: auto;
+}
+body{
+	background: linear-gradient(#F7DC6F,#EDBB99,#DC7633 );
+}
+h3{
+	color: red;
+	font-family: "Bungee Tint", sans-serif;
+	font-size: 20px;
+}
+#cabecero{	
+	width: 98%;
+	margin: auto;
+	margin-bottom: 10px;
+	padding: 5px;
+	padding-top: 20px;	
+}
+#cabecero .menu{
+	background-color:#fffffff2 ;
+	border: 1px solid black;
+	width: 10%;
+	float:left;
+	padding: 10px;	
+	margin: 2px;
+}
+#cabecero .logo{
+	padding: 5px;
+	width: 76%;
+	float:left;	
+}
+#cabecero .logo img{
+	width: 100%;
+	height: 110px;
+}
+#cabecero .logearse{	
+	padding: 10px;
+	margin-top: 5px;
+	margin-left: 18px;	
+	width: 8%;
+	float: left;
+}
+.button{
+	background-color: blue;
+	color: white;
+	box-shadow: 3px 3px black;
+	cursor: pointer;	
+	margin-top: 12px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+	height: 30px;
+}
+#cabecero .button:hover{
+	background-color: red;
+}
+#cabecero .menu li{
+	list-style-type: none;
+	overflow: hidden;
+	margin: auto;
+	width: 80%;
+	height: 30px;
+}
+#cabecero .menu li a{
+	display: block;
+	color: white;
+	margin-top: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+#cabecero .menu li{
+	text-decoration: none;
+	background-color: blue;
+	border: 1px solid black;
+	margin-bottom: 5px;
+	box-shadow: 3px 3px black;
+}
+#cabecero .menu li:hover{
+	background-color: red;
+}
+#cabecero .busqueda input[type="text"]{
+	margin-left: 170px;
+	display: block;
+	overflow: hidden;
+	width: 70%;
+	height: 30px;
+}
+#cabecero .busqueda input[type="button"]{
+	margin-left: 45%;
+	display: block;
+	overflow: hidden;
+	width: 10%;
+	height: 30px;
+}
+
+/* responsive cabecero*/
+
+@media (max-width:991px){
+	#cabecero{
+		
+		height: 310px;
+		width: 100%;
+		padding: 0px;
+	}
+	#cabecero .menu{
+		width: 100%;
+		border: none;		
+	}
+	#cabecero .menu li{
+		width: 21%;
+		margin-left:10px;		
+		padding: 0px;
+		float: left;
+		font-size: 17px;
+	}
+	#cabecero .logo{
+		width: 100%;
+		height: 140px;
+		margin-top: 10px;
+	}
+	#logo img{
+		height:160px;
+	}
+	#cabecero .logearse{
+		width: 40%;
+		margin-left: 10px;
+		margin-top: 0px;
+		float: left;
+		padding: 0;
+	}
+	#cabecero .logearse .button{
+		width: 80%;
+	}	
+	#cabecero .busqueda input[type="text"]{
+		margin: auto;
+		display: block;
+		overflow: hidden;
+		width: 50%;
+		height: 30px;
+	}
+	#cabecero .busqueda input[type="button"]{
+		margin: auto;
+		display: block;
+		overflow: hidden;
+		width: 30%;
+		height: 30px;
+		margin-top: 5%;	
+	}
+}
+
+/* Estilos carrusel */
+
+#carrusel{
+	width: 80%;
+	margin: auto;
+	margin-bottom: 20px;	
+}
+#carrusel .slider-box{
+	width: 90%;
+	
+	margin: 20px auto 0;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+#carrusel .slider-box ul{
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: slide 10s infinite alternate ease-in-out;
+}
+#carrusel .slider-box li{
+	width: 100%;
+	list-style: none;
+	position: relative;
+}
+#carrusel .slider-box img{
+	width: 100%;
+	height: 450px;
+}
+.texto 
+{
+	position: absolute;
+	text-align: center;
+	padding: 0	250px;
+	top: 200px;
+	color: red;
+	font-size: 30px;
+}
+
+/* efecto de el carrusel */ 
+
+@keyframes slide{
+	10% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%0;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%0;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/*responsive carrusel*/
+
+@media (max-width:991px){
+	body{
+		padding:30px ;
+	}
+	#carrusel{
+		width: 100%;
+	}
+	
+	#carrusel .slider-box{
+		width: 100%;
+		height: 200px;
+	}
+}
+
+/* promociones*/
+
+#promo{
+	width: 90%;
+	margin: auto;
+	padding: 15px;
+	border: 1px dashed blue;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+#promo .promociones{
+	padding: 10px;
+	height: 180px;
+}
+#promo .promociones .imgpromocion{
+	margin-left: 6px;
+	padding-top: 10PX;
+	width: 16%;
+	float: left;
+}
+#promo .promociones .imgpromocion img{
+	width: 98%;
+	height: 150px;
+}
+
+/*responsive Promociones*/
+
+@media (max-width:991px){
+	#promo{
+		width: 100%;
+		height: 620px;
+	}
+	#promo .promociones{
+		width: 95%;
+	}
+	#promo .promociones .imgpromocion{
+		width: 46%;
+		margin-left: 9px;
+	}	
+}
+
+/* menu fin de pagina*/
+
+#menuInferior{
+	height: 60px;
+	width: 98%;
+	margin: auto;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+#menuInferior .menuAbajo{
+	width: 30%;
+	margin-left: 70%;
+}
+.menuAbajo li a{
+	display: block;
+	color: white;
+	margin-top: 5px;;
+	text-decoration: none;
+}
+.menuAbajo li{
+	list-style-type: none;
+	overflow: hidden;
+	width: 25%;
+	height: 30px;
+	text-decoration: none;
+	background-color: blue;
+	border: 1px solid black;
+	margin-bottom: 10px;
+	box-shadow: 3px 3px black;
+	float: left;
+	margin-left: 15px;
+}
+.menuAbajo li:hover{
+	background-color: red;
+}
+/* responsive menu abajo */
+
+@media (max-width:991px){
+	#menuInferior{
+		width: 100%;		
+	}
+	#menuInferior .menuAbajo{
+		width: 90%;
+		margin-left: 20%;
+	}
+}
+
+/* estilo Pagina Nosotros*/
+
+#cont{
+	width: 75%;
+	margin: auto;
+	height: 400px;
+	padding: 10px;
+}
+#cont .titulo1{
+	padding: 5px;
+	margin: 5px;
+	height: 330px;
+	width: 45%;
+	float: left;
+	margin-left: 30px;	
+}
+#cont .titulo2{
+	padding: 5px;
+	margin: 5px;
+	height: 330px;
+	width: 45%;
+	float: left;
+	margin-left: 30px;
+	
+}
+#cont  h4{
+	color:red;
+	font-family: "Bungee Tint", sans-serif;
+	
+}
+#cont .titulo1 .mision {
+	padding: 10px;
+	border: 2px solid black;
+	height: 280px;
+	margin-top: 10px;	
+}
+#cont .titulo2 .vision {
+	padding: 10px;
+	border: 2px solid black;
+	height: 280px;
+	margin-top: 10px;
+}
+
+/*responsive nosotros mision y vision */
+
+@media(max-width:991px){
+	#cont{
+		width: 100%;
+		height: auto;
+	}
+	#cont .titulo1{
+		width: 95%;
+		padding: 0;
+		margin: 0;
+		height: 480px;
+		float: none;
+	}
+	#cont .titulo1 .mision{
+		width: 98%;
+		margin: 0;
+		padding: 0;
+		height: 420px;
+		margin-top: 10px;
+	}
+	#cont .titulo2{
+		width: 95%;
+		padding: 0;
+		margin: 0;	
+		height: 480px;	
+		float: none;
+	}
+	#cont .titulo2 .vision{
+		width: 98%;
+		margin: 0;
+		padding: 0;
+		height:420px;
+		margin-top: 10px;
+	}	
+}
+/*- estilos categoria*/
+#categ{
+	width: 90%;
+	margin: auto;
+	padding: 15px;
+	border: 1px dashed blue;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+#categ .categorias{
+	padding: 10px;
+	height: 200px;
+}
+#categ .categorias .imgcategoria{
+	margin-left: 2px;
+	padding-top: 10PX;
+	width: 14%;
+	float: left;
+}
+#categ .categorias .imgcategoria img{
+	width: 98%;
+	height: 170px;
+}
+/*responsive categorias*/
+
+@media (max-width:991px){
+	#categ{
+		margin-top: 40;
+		width: 100%;
+		height: 920px;
+	}
+	#categ .categorias{
+		width: 95%;
+	}
+	#categ .categorias .imgcategoria{
+		width: 47%;
+		margin-left: 5px;
+	}	
+
+/*Estilos Productos*/
+
+}
+#prod{
+	padding: 20px;
+	width: 95%;
+	margin: auto;
+}
+#prod .productos{
+	padding: px;
+	height: 210px;
+	border:3px solid black;
+	border-radius: 20px  20px 20px 20px;
+}
+#prod .productos .imgproductos{
+	width: 16%;
+	margin-left: 9px;
+	float: left;
+	padding: 5px;
+}
+#prod .productos .imgproductos img{
+	width: 90%;
+	height: 180px;
+	margin-left: 10px;
+}
+#prod .productos .imgproductos a{
+	float: right;
+	margin: 70px;
+	margin-left: 5px;
+	color: red;
+	font-size: 20px;
+}
+/*responsive productos*/
+
+@media (max-width:991px){
+	#prod{
+		width: 100%;
+	}
+	#prod .productos{
+		padding: px;
+		height: 620px;
+		border:3px solid black;
+		border-radius: 20px  20px 20px 20px;
+	}
+	#prod .productos .imgproductos{
+		width: 45%;
+		margin-left: 3px;
+		float: left;
+		padding: 5px;
+	}
+	#prod .productos .imgproductos a{
+		width: 80%;
+		margin-top: 50px;
+		margin:auto;
+	}	
+}
+
+/*estilos Contacto*/
+#contacto{
+	width: 90%;
+	height: 400px;
+	margin: auto;
+	padding: 10px;
+}
+#contacto .mapa{
+	width: 45%;
+	float: left;
+	margin-left: 50px;
+	padding: 10px;
+}
+#contacto .info{
+	width: 45%;
+	float: left;
+	margin-left: 50px;
+}
+#contacto .info .infocont{
+	border: 1px solid black;
+}
+#contacto img{
+	width: 90%;
+	height: 340px;
+	margin-left: 5%;	
+}
+#contacto h3,p{
+	margin-top: 3%;
+}
+/*responsive Contacto*/
+@media(max-width:991px){
+	#contacto{
+		width: 100%;
+		height: 800px;
+	}
+	#contacto .mapa{
+		width: 100%;
+		margin-left:0;
+	}
+	#contacto .info{
+		width: 95%;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	#contacto h3{
+		text-align: center;
+	}
+}
+
+/* estilos inicio de sesion*/
+#cabSesion{
+	padding: 10px;
+}
+#cabSesion .logo{
+	width: 75%;
+	margin: auto;
+	padding: 5px;
+}
+#cabSesion .logo img{
+	width: 100%;
+	height: 140px;
+}
+.contenedor{/*el . se utiliza para llamar una clase*/
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgba(0,0,0, .5);
+    border-radius: 10px;
+}
+
+.contenedor .elemento label{/* para llamar un elemento que esta en cascada se llama la primera clae, luego la siguiente clase y por ultimo el elemnto a modoficar*/
+    color: #fff ;
+	
+}
+.contenedor .elemento input{
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    background: transparent;/* se usa para quitarle el fondo */
+   border: none;
+    border-bottom: 1px solid  #fff;
+    margin-bottom: 30px;
+}
+.contenedor .elemento input[type="submit"]{/* se relaciona asi cuando es solo un tipo de elemento y no todos los input */
+   background-color: #f72585;
+    border: none;
+    letter-spacing: 5px;/* ´para separar lo caracteres */
+    text-transform: uppercase;/* se usa para modificar los textos a mayusculas */
+   cursor: pointer;/* para que aparezca el curson en forma de manito cuandop estampos sobre un boton */
+    padding:15px;
+    margin-top: 30px;
+}
+.contenedor .elemento input[type="submit"]:hover{
+	background-color: red;
+}
+.contenedor h4{
+	text-align: center;	
+}
+.contenedor a{
+	margin-left: 30px;
+	font-size: 20px;
+	color: #fff;
+}
+.volver{
+	margin-bottom: 20px;
+}
+
+.volver img{
+	width: 50px;
+	margin-left: 48%;
+
+}
+.volver a{
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+/*responsive login*/
+
+@media(max-width:991px){
+	#cabSesion .logo{
+		width: 95%;
+	}
+	.contenedor{
+		width: 100%;
+	}
+	.contenedor a{
+		margin-left: 10px;
+		font-size: 17px;
+		color: #fff;
+	}
+	.volver img{
+		width: 50px;
+		margin-left: 30%;
+}
+}
+
+
+
+

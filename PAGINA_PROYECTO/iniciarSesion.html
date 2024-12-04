@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link href="css/estilos.css" rel="stylesheet"/>		
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="cabSesion">
+        <div class="logo">	
+			<img src="img/logo.jpg" alt="">
+		</div>
+    </div>
+    <div class="contenedor">
+        <h3>Bienvenidos a Arte y Diseño</h3>
+        <br>
+        <h4>Ingrese Nombre de Usuario y Contraseña</h4>
+        <form id="forma" name="forma" method="post">
+            <br><br><br>
+            <div class="elemento">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required="true">
+            </div>
+            <div class="elemento">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required="true">
+            </div>
+            <div class="elemento">
+                <input type="submit" value="Iniciar Sesión"/>
+            </div>
+            <div class="elemento">
+                <a href="registrarse.html">Registrarse</a>
+                <a href="olvidar.html">Olvido su Contraseña</a>
+            </div>
+        </form>
+    </div>
+    <div class="volver">
+        <img src="img/volver.jpg" alt="">
+        <a href="index.html">Volver al Inicio</a>
+    </div>
+</body>
+</html>
