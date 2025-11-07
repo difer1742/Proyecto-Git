@@ -1,10 +1,12 @@
+
+
 *:root {
     /* Variables de Color */
     --color-primary: #3498db; /* Azul para botones y enlaces principales */
     --color-secondary: #e74c3c; /* Rojo para hover */
     --color-background-start: #F7DC6F;
-    --color-background-mid: #EDBB99;
-    --color-background-end: #DC7633;
+    --color-background-mid: #e91111;
+    --color-background-end: #4fdc33;
     --color-text-dark: #333;
     --color-text-light: white;
     --color-widget-bg: #ffffff;
